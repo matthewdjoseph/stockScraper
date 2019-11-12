@@ -26,7 +26,6 @@ public class ScrapeStockSite {
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Stock.class)
 				.addAnnotatedClass(User.class).buildSessionFactory();
 
-		// get the instructor from db
 		Session session = factory.getCurrentSession();
 		session.beginTransaction();
 
